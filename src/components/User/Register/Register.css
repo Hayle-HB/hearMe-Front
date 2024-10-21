@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+.registration {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.registration h1 {
+  text-align: center;
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--gentle-blue);
+}
+
+.registration .registration-main {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+}
+
+.registration-main .video-overly {
+}
+
+.registration .registration-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 50%;
+}
+
+.registration .registration-main form input,
+.registration .registration-main form button {
+  width: 50%;
+  color: var(--gentle-blue);
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+  border: 1px solid aqua;
+  box-shadow: 1px 1px 1px aqua;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.registration .registration-main form button {
+  border: none;
+  background-color: var(--primary-blue-color);
+  box-shadow: none;
+
+  color: black;
+}
+
+.registration .registration-main form input:focus {
+  border: 1px solid red;
+}
+
+.registration .registration-main form button:hover {
+  background-color: transparent;
+  border: 1px solid var(--primary-blue-color);
+  color: white;
+}
+
+img {
+  width: 200px;
+}
+
+@media (max-width: 500px) {
+  .registration .registration-main {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .registration .registration-main form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .registration .registration-main form input,
+  .registration .registration-main form button {
+    width: 84%;
+  }
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: inherit;
+  height: 4.8px;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  animation: animFw 8s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 9px;
+  right: -2px;
+  opacity: 0;
+  transform: rotate(-45deg) translateX(0px);
+  box-sizing: border-box;
+  animation: coli1 0.3s linear infinite;
+}
+.loader::before {
+  top: -4px;
+  transform: rotate(45deg);
+  animation: coli2 0.3s linear infinite;
+}
+
+@keyframes animFw {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes coli1 {
+  0% {
+    transform: rotate(-45deg) translateX(0px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-25px);
+    opacity: 0;
+  }
+}
+
+@keyframes coli2 {
+  0% {
+    transform: rotate(45deg) translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translateX(-25px);
+    opacity: 0.7;
+  }
+}
+
+
+.video-overly {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: fit-content;
+}
+
+video {
+  width: 500px;
+  border-radius: 40px;
+}

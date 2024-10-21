@@ -38,3 +38,9 @@ span,
 button {
   font-family: var(--main-font-2);
 }
+
+
+
+button {
+  cursor: pointer;
+}
