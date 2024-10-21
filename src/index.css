@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --main-bg-color: #0a192f;
+  --dim-main-bg-color: #071120;
+  --text-green-color: #64ffda;
+  --text-grey-color: #8892af;
+  --tinted-green-color: rgba(100, 255, 218, 0.1);
+  --grey-color-1: #ccd6f6;
+  --grey-color-2: #8892b0;
+  --grey-color-3: #a1b5cd;
+  --gentle-blue: #b0cdf1;
+  --dim-blue: #12213e;
+  --lighter-blue: #162b52;
+  --main-font: "Ubuntu";
+  --main-font-2: "Roboto";
+  --secondary-font: "Fira Code", monospace;
+  --primary-blue-color: rgb(0, 237, 100);;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--main-bg-color);
+}
+
+h1,
+a,
+p,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button {
+  font-family: var(--main-font-2);
+}

@@ -1,0 +1,248 @@
+.addVent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addVent-container h2 {
+  color: var(--grey-color-1);
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 2px 1px 3px var(--text-green-color);
+}
+
+.checkedSVG {
+  fill: aqua;
+  width: 25px;
+}
+
+.addVent-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.addVent-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.addVent-form input,
+.addVent-form textarea {
+  border: none;
+  background-color: transparent;
+  padding-top: 8px;
+  border: 1px solid aqua;
+  padding-left: 10px;
+  padding-bottom: -10px;
+  padding-bottom: 30px;
+  font-size: 1.3rem;
+  color: var(--grey-color-1);
+  resize: vertical;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+.addVent-form textarea {
+  min-height: 150px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: white;
+  pointer-events: none;
+  transition: 0.25s ease-in-out;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: black;
+  transform: translateX(10px) translateY(-33px);
+  font-size: 1rem;
+  background-color: var(--main-bg-color);
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: var(--primary-blue-color);
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid red;
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .addVent-form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .addVent-form input,
+  .addVent-form textarea {
+    font-size: 0.8rem;
+  }
+}
+
+.addVent-form .topics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+.topics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+}
+
+.topics-container p {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: aqua;
+}
+.addVent-form .topics button {
+  border: 1px solid var(--primary-blue-color);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.6;
+  color: var(--grey-color-1);
+}
+
+.addVent-form .topics button:hover {
+  opacity: 1;
+  border: 1px solid aqua;
+}
+
+@media (max-width: 500px) {
+  .addVent-container .topics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.addVent-form .topics .selected {
+  opacity: 1;
+  background-color: var(--primary-blue-color);
+  color: black;
+}
+
+.addVent-form .submit {
+  width: inherit;
+}
+
+.addVent-container .submit button {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: 1000;
+  font-size: 1rem;
+  font-family: var(--main-font-2);
+  background-color: var(--primary-blue-color);
+  transition: 0.3s ease;
+}
+
+.addVent-container .submit button:hover {
+  border: 1px solid var(--primary-blue-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*
+
+
+
+.addVent-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputBox input,
+.inputBox textarea {
+  pad: 10px;
+  border: 3px solid aqua;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: aqua;
+  font-size: .91rem;
+  padding: 20px;
+  box-shadow: 300px 300px 10000px aqua;
+  opacity: .3;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: white;
+  pointer-events: none;
+  transition: 0.25s ease-in-out;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: black;
+  transform: translateX(10px) translateY(-33px);
+  font-size: 1rem;
+  background-color: var(--main-bg-color);
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid red;
+  opacity: 1;
+}
+
+
+@media (max-width: 500px){
+
+  .addVent-form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+*/
